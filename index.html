@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moodlings — Product Case Study</title>
+  <meta name="description" content="Moodlings is an iOS emotional reflection product designed and developed by Chih Jo Lin.">
+  <link rel="icon" href="favicon.png">
+  <meta property="og:title" content="Moodlings — Product Case Study">
+  <meta property="og:description" content="Helping people turn vague feelings into emotions they can recognize and reflect on.">
+  <meta property="og:image" content="og.png">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #fbfaf6; }
+    .page-shell { position: relative; width: 100%; height: 100dvh; overflow: hidden; background: #fbfaf6; }
+    .page-frame { display: block; width: 100%; height: 100%; border: 0; background: #fbfaf6; }
+    .page-frame.is-scaled {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1440px;
+      height: var(--frame-height);
+      transform: scale(var(--frame-scale));
+      transform-origin: top left;
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <iframe class="page-frame" src="moodlings.html" title="Moodlings — Product Case Study"></iframe>
+  </main>
+  <script>
+    const frame = document.querySelector('.page-frame');
+    const desktopWidth = 1440;
+    const mobileBreakpoint = 680;
+
+    function syncFrame() {
+      const mobile = window.innerWidth <= mobileBreakpoint;
+      const scale = mobile ? window.innerWidth / desktopWidth : 1;
+      frame.classList.toggle('is-scaled', mobile);
+      frame.style.setProperty('--frame-scale', String(scale));
+      frame.style.setProperty('--frame-height', `${window.innerHeight / scale}px`);
+    }
+
+    syncFrame();
+    window.addEventListener('resize', syncFrame, { passive: true });
+    window.visualViewport?.addEventListener('resize', syncFrame, { passive: true });
+  </script>
+</body>
+</html>

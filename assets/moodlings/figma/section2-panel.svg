@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="970" height="549" viewBox="0 0 970 549" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 50C0 22.3858 22.3858 0 50 0H920C947.614 0 970 22.3858 970 50V499C970 526.614 947.614 549 920 549H50C22.3858 549 0 526.614 0 499V50Z" fill="url(#section2PanelGradient)" fill-opacity="0.8"/>
+<defs>
+<linearGradient id="section2PanelGradient" x1="39.0109" y1="-6.51503e-06" x2="337.525" y2="788.458" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFE5F3"/>
+<stop offset="1" stop-color="#F1F0FF"/>
+</linearGradient>
+</defs>
+</svg>
