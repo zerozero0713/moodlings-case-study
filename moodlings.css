@@ -184,6 +184,8 @@
     background:var(--paper);
     transform:translate3d(0,var(--cover-frame-y),0);
     clip-path:inset(0 0 var(--cover-cut) 0 round 0 0 var(--cover-radius) var(--cover-radius));
+    will-change:transform,clip-path;
+    backface-visibility:hidden;
   }
   .mood-hero .hero-state{position:absolute;inset:0;overflow:visible;transition:none}
   .hero-editable{
@@ -192,8 +194,7 @@
     left:50%;
     width:1440px;
     height:960px;
-    transform:translateX(-50%);
-    zoom:var(--cover-scale);
+    transform:translateX(-50%) scale(var(--cover-scale));
     transform-origin:top center;
     overflow:visible;
     background:var(--paper);
@@ -228,6 +229,8 @@
     box-shadow:none;
     transition:none;
     transform:translate3d(0,var(--cover-card-shift),0);
+    will-change:transform;
+    backface-visibility:hidden;
   }
   .hero-device-left{
     z-index:2;
