@@ -201,16 +201,16 @@
   }
   .hero-bg-layer{
     z-index:0;
-    inset:0 auto auto 0;
-    width:100%!important;
-    height:auto!important;
-    object-fit:contain!important;
+    inset:-450px auto auto -31px;
+    width:1613px!important;
+    height:1291px!important;
+    object-fit:fill!important;
     object-position:left top!important;
     image-rendering:-webkit-optimize-contrast;
   }
   .hero-editable-title{
     z-index:1;
-    top:var(--cover-title-y);
+    top:127px;
     left:50%;
     width:566px;
     transform:translateX(-50%);
@@ -235,23 +235,23 @@
   .hero-device-left{
     z-index:2;
     left:var(--cover-left-x);
-    top:360px;
+    top:340px;
     width:513px;
     height:476px;
   }
   .hero-device-right{
     z-index:2;
     left:var(--cover-right-x);
-    top:360px;
+    top:340px;
     width:513px;
     height:476px;
   }
   .hero-device-center{
     z-index:3;
     left:482px;
-    top:188px;
+    top:250px;
     width:476px;
-    height:985px;
+    height:566px;
   }
   .hero-glass-card{
     position:absolute;

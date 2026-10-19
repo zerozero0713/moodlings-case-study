@@ -111,9 +111,9 @@ function syncLayout(){
   rootStyle.setProperty('--section5-scale',scale.toFixed(4));
   rootStyle.setProperty('--section5-height',`${1185*scale}px`);
   rootStyle.setProperty('--cover-scale',safeScale.toFixed(4));
-  rootStyle.setProperty('--cover-height',`${innerHeight*.9}px`);
+  rootStyle.setProperty('--cover-height',`${816*safeScale}px`);
   rootStyle.setProperty('--cover-radius',`${50*safeScale}px`);
-  rootStyle.setProperty('--cover-gap',`${innerHeight*.1}px`);
+  rootStyle.setProperty('--cover-gap',`${144*safeScale}px`);
   updateScroll();
 }
 addEventListener('scroll',requestScrollUpdate,{passive:true});
